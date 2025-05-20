@@ -3,14 +3,13 @@ Name: guacamol
 Version: 0.5.5
 Summary: Guacamol: benchmarks for de novo molecular design
 Author-email: BenevolentAI <guacamol@benevolent.ai>
-License-Expression: MIT
 Project-URL: Homepage, https://github.com/BenevolentAI/guacamol
 Project-URL: Bug Tracker, https://github.com/BenevolentAI/guacamol/issues
 Requires-Python: >=3.10
 Description-Content-Type: text/markdown
 License-File: LICENSE
 Requires-Dist: joblib>=1.5.0
-Requires-Dist: numpy>=2.2.6
+Requires-Dist: numpy>=1.24.1
 Requires-Dist: scipy>=1.1.0
 Requires-Dist: tqdm>=4.26.0
 Requires-Dist: FCD>=1.1

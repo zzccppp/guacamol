@@ -98,7 +98,7 @@ dev = [
 requires-dist = [
     { name = "fcd", specifier = ">=1.1" },
     { name = "joblib", specifier = ">=1.5.0" },
-    { name = "numpy", specifier = ">=2.2.6" },
+    { name = "numpy", specifier = ">=1.24.1" },
     { name = "rdkit" },
     { name = "scipy", specifier = ">=1.1.0" },
     { name = "tqdm", specifier = ">=4.26.0" },
