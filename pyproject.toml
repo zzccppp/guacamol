@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=61.0"]         # 指定构建工具，setuptools 是常用的选择
+build-backend = "setuptools.build_meta"
+backend-path = ["."]                    # 可选，如果你的构建后端在子目录中
+
+[project]
+name = "guacamol"
+version = "0.5.5" # 你可以从 guacamol/__init__.py 获取
+description = "Guacamol: benchmarks for de novo molecular design"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "BenevolentAI", email = "guacamol@benevolent.ai" }]
+
+
+# 依赖项
+dependencies = [
+    "joblib>=1.5.0",
+    "numpy>=2.2.6",
+    "scipy>=1.1.0",
+    "tqdm>=4.26.0",
+    "FCD>=1.1",
+    "rdkit",
+]
+
+[dependency-groups]
+dev = ["flake8>=3.5.0", "mypy>=0.630", "pytest>=3.8.2"]
+
+# 项目的URL
+[project.urls]
+"Homepage" = "https://github.com/BenevolentAI/guacamol"
+"Bug Tracker" = "https://github.com/BenevolentAI/guacamol/issues"
+
+[tool.setuptools]
+packages = ["guacamol"]
+
+# 工具特定配置 (例如 mypy)
+[tool.mypy]
+check_untyped_defs = true #
+
+[[tool.mypy.overrides]]
+module = [
+    "fcd.*",    #
+    "joblib.*", #
+    "numpy.*",  #
+    "pytest.*", #
+    "rdkit.*",  #
+    "scipy.*",  #
+    "tqdm.*",   #
+]
+ignore_missing_imports = true #
