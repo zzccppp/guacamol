@@ -9,7 +9,6 @@ version = "0.5.5" # 你可以从 guacamol/__init__.py 获取
 description = "Guacamol: benchmarks for de novo molecular design"
 readme = "README.md"
 requires-python = ">=3.10"
-license = "MIT"
 authors = [{ name = "BenevolentAI", email = "guacamol@benevolent.ai" }]
 
 
